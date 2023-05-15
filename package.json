@@ -1,0 +1,33 @@
+{
+  "name": "connecting-people-my-first-chatroom",
+  "version": "1.0.0",
+  "description": "deeltaak sprint 11",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CathelijneVisser/connecting-people-my-first-chatroom.git"
+  },
+  "keywords": [
+    "express",
+    "socket.io"
+  ],
+  "author": "Cathelijne Visser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CathelijneVisser/connecting-people-my-first-chatroom/issues"
+  },
+  "homepage": "https://github.com/CathelijneVisser/connecting-people-my-first-chatroom#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}

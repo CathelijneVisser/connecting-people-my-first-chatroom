@@ -8,11 +8,15 @@
     color: var(--black-color);
 }
 
+:root {
+    --gradient-color: linear-gradient(90deg, #524dd0 0%, #84389e 100%);
+}
+
 @font-face {
     font-family: "Rajhandi";
     src: url("assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
         url("assets/fonts/Rajdhani-SemiBold.woff") format("woff");
-        font-weight: 600;
+    font-weight: 600;
     font-display: swap;
 }
 
@@ -20,7 +24,7 @@
     font-family: "Rajhandi";
     src: url("assets/fonts/Rajdhani-Bold.ttf") format("ttf"),
         url("assets/fonts/Rajdhani-Bold.woff") format("woff");
-        font-weight: 700;
+    font-weight: 700;
     font-display: swap;
 }
 
@@ -28,7 +32,7 @@
     font-family: "Rajhandi";
     src: url("assets/fonts/Rajdhani-Regular.ttf") format("ttf"),
         url("assets/fonts/Rajdhani-Regular.woff") format("woff");
-        font-weight: 400;
+    font-weight: 400;
     font-display: swap;
 }
 
@@ -39,19 +43,35 @@ body {
 
 section {
     width: fit-content;
+}
+
+ul {
+    border: 1px black solid;
     height: 40rem;
-    display: flex;
-    flex-direction: column;
-}  
-
-h1 {
-
+    margin-bottom: .5em;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 2px #bbbbbb;
 }
 
 li {
-   list-style-type:none
-    border
+    list-style-type: none;
+    background-color: rgb(64, 3, 86);
+    color: white;
+    border-radius: 3rem;
+    width: fit-content;
+    padding: .5em 1em;
+    margin: 1rem;
+}
+
+input {
+    border-radius: 1rem;
 }
 
 button {
+    background: var(--gradient-color);
+    color: white;
+    padding: 0 0.7rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
 }

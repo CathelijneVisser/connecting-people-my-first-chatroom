@@ -13,21 +13,23 @@ const ioServer = new Server(http)
 app.use(express.static(path.resolve('public')))
 
 
-ioServer.on('connection', (client, name) => {
+ioServer.on('connection', (client) => {
 
-  ioServer.on('user', name){
+  client.on('user', (name) => {
+
     console.log(`user ${name} connected`)
-    ioServer.emit(`new user conected ${name}`)
-  }
 
-  client.on('message', (message) => {
-    console.log(`user ${client.id} sent message: ${message}`)
-    ioServer.emit('message', message)
-  })
+    ioServer.emit('user', name)
 
-  client.on('disconnect', () => {
-    console.log(`user ${client.id} disconnected`)
-    ioServer.emit(`user ${client.id} disconnected`)
+    client.on('message', (message) => {
+      console.log(`user ${name} sent message: ${message}`)
+      ioServer.emit('message', (name, message))
+    })
+
+    client.on('disconnect', (name) => {
+      ioServer.emit('disconnect', (name))
+      console.log(`user ${name} disconnected`)
+    })
   })
 })
 

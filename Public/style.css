@@ -43,20 +43,23 @@ body {
 
 section {
     width: fit-content;
+    display: none;
 }
 
-ul {
+dl {
     border: 1px black solid;
     height: 40rem;
     margin-bottom: .5em;
     border-radius: 1rem;
     box-shadow: 1px 3px 2px #bbbbbb;
-}
-
-li {
-    list-style-type: none;
     background-color: rgb(64, 3, 86);
     color: white;
+}
+
+dt {}
+
+dd {
+
     border-radius: 3rem;
     width: fit-content;
     padding: .5em 1em;

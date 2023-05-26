@@ -23,7 +23,7 @@ ioServer.on('connection', (client) => {
 
     client.on('message', (message) => {
       console.log(`user ${name} sent message: ${message}`)
-      ioServer.emit('message', (name, message))
+      ioServer.emit('message', {name: name, message: message})
     })
 
     client.on('disconnect', (name) => {

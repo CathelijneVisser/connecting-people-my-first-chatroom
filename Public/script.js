@@ -30,9 +30,9 @@ ioServer.on('user', (name) => {
     addUser(name)
 })
 
-ioServer.on('message', (name, message) => {
-    addMessage(name, message)
-    console.log(name, message)
+ioServer.on('message', (data) => {
+    addMessage(data.name, data.message)
+    console.log(data.name, data.message)
 })
 
 ioServer.on('disconnect', (name) => {

@@ -48,11 +48,11 @@ section {
 
 dl {
     border: 1px black solid;
-    height: 40rem;
+    height: 35rem;
     margin-bottom: .5em;
     border-radius: 1rem;
     box-shadow: 1px 3px 2px #bbbbbb;
-    background-color: rgb(64, 3, 86);
+    background-color: #524dd0;
     color: white;
 }
 

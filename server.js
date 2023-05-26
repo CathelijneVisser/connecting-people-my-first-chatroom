@@ -10,7 +10,7 @@ const ioServer = new Server(http)
 
 
 
-app.use(express.static(path.resolve('public')))
+app.use(express.static(path.resolve('Public')))
 
 
 ioServer.on('connection', (client) => {

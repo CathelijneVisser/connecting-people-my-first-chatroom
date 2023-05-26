@@ -56,14 +56,16 @@ dl {
     color: white;
 }
 
-dt {}
+dt {
+    padding-left: 1rem;
+}
 
 dd {
-
+    border: white solid 1px;
+    padding-left: 1rem;
     border-radius: 3rem;
     width: fit-content;
-    padding: .5em 1em;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 input {
